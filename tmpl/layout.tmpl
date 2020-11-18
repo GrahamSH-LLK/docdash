@@ -39,9 +39,7 @@
 
 <nav <?js if (env.conf.docdash.wrap) { ?>class="wrap"<?js } ?>>
     <?js if (env.conf.docdash.logo)  {?>
-    <img src="" class="logo">
-     const src = env.conf.docdash.logo.src
-     document.querySelector('.logo').src = src;
+    <img src="<?js= env.conf.docdash.logo.src ?>"/> class="logo">
     <?js } ?>
     <?js if (env.conf.docdash.search) { ?>
     <input type="text" id="nav-search" placeholder="Search" />
