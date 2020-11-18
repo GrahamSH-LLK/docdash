@@ -763,3 +763,10 @@ html[data-search-mode] .level-hide {
     font-style: normal;
 
 }
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 1rem;
+}
