@@ -38,6 +38,9 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav <?js if (env.conf.docdash.wrap) { ?>class="wrap"<?js } ?>>
+    <?js if (env.conf.docdash.logo) { ?>
+    <img src="{ ?>env.conf.docdash.search.src<?js }" class="logo">
+    <?js } ?>
     <?js if (env.conf.docdash.search) { ?>
     <input type="text" id="nav-search" placeholder="Search" />
     <?js } ?>
