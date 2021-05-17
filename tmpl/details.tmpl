@@ -15,6 +15,10 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
 ?>
 
 <dl class="details">
+    <?js if (data.description) {?>
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><?js= data.description ?></li></ul></dd>
+    <?js } ?>
 
     <?js if (data.meta && self.outputSourceFiles) {?>
     <dt class="tag-source">Source:</dt>
